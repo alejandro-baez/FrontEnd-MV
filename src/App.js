@@ -1,5 +1,6 @@
 import React from 'react'
 import {Route, Routes} from "react-router-dom"
+//Box component is layout comp that wraps and packages style functions in material ui
 import {Box} from "@mui/material"
 
 import './App.css'
