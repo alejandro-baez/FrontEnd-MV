@@ -18,12 +18,13 @@ const HeroBanner = () => {
       <Typography
         fontWeight={700}
         sx={{ fontSize: { lg: "44px", xs: "40px" } }}
+        mb="23px" mt="30px"
       >
         Sweat, Smile <br /> and Repeat{" "}
       </Typography>
-      <Typography fontSize="22px" lineHeight="35px" mb={3}>Learn more about every exercises</Typography>
+      <Typography fontSize="22px" lineHeight="35px" mb={4}>Learn more about every exercises</Typography>
       <Button variant="contained" href="#exercises">Explore Exercises</Button>
-      <img src={HeroBannerImg} alt="Banner" className="hero-banner-img" style={{width:"900px", height:"600px", margin:"0 5px"}}/>
+      <img src={HeroBannerImg} alt="Banner" className="hero-banner-img" style={{width:"600px", height:"400px", margin:"0 5px"}}/>
     </Box>
   );
 };
