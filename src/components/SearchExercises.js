@@ -32,6 +32,7 @@ const SearchExercises = ({ setExercises }) => {
         sx={{ fontSize: { lg: "44px", xs: "30px" } }}
         mb="50px"
         textAlign="center"
+        mt="100px"
       >
         Awesome Exercises You <br /> Should Know
       </Typography>

@@ -13,14 +13,14 @@ const HeroBanner = () => {
       p="20px"
     >
       <Typography color="#0069F7" fontWeight="600" fontSize="26px">
-        Fitness Club
+        Fitness Wiki
       </Typography>
       <Typography
         fontWeight={700}
         sx={{ fontSize: { lg: "44px", xs: "40px" } }}
         mb="23px" mt="30px"
       >
-        Sweat, Smile <br /> and Repeat{" "}
+        Every Exercise<br/> All In One Place{" "}
       </Typography>
       <Typography fontSize="22px" lineHeight="35px" mb={4}>Learn more about every exercises</Typography>
       <Button variant="contained" href="#exercises">Explore Exercises</Button>
