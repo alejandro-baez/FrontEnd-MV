@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import { fetchData, exerciseOptions } from "../utils/fetchData";
 
-const SearchExercises = () => {
+const SearchExercises = ({ setExercises }) => {
   const [search, setSearch] = useState("");
-  const [exercises, setExercises] = useState([]);
+//   const [exercises, setExercises] = useState([]);
 
   const handleSearch = async () => {
     if (search) {
@@ -13,13 +13,16 @@ const SearchExercises = () => {
         exerciseOptions
       );
 
-      const searchedExercises = await exerciseData.filter((exercise) =>
-        exercise.name.includes(search.toLowerCase()) ||  exercise.equipment.includes(search.toLowerCase() ||
-        exercise.bodyPart.includes(search.toLowerCase()) 
-      ));
+      const searchedExercises = await exerciseData.filter(
+        (exercise) =>
+          exercise.name.includes(search.toLowerCase()) ||
+          exercise.equipment.includes(
+            search.toLowerCase() ||
+              exercise.bodyPart.includes(search.toLowerCase())
+          )
+      );
       setSearch("");
       setExercises(searchedExercises);
-      console.log(exercises);
     }
   };
   return (
